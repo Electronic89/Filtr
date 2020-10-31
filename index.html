@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Real Estate Notifier</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Уведомитель о ценах на недвижимость</span>
+    <span class="site-heading-lower text-primary2">Real estate price Notifier</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Real Estate Notifier</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Домашняя
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="lk.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <!-- <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt=""> -->
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Поиск</span>
+            <span class="section-heading-lower">Аппартаменты мечты</span>
+          </h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Регион поиска</label>
+              <input type="text" class="form-control" id="regionSearch" aria-describedby="regionSearch" placeholder="введите регион поиска недвижимости">
+            </div>
+            <div class="form-group">
+           
+              <div class="input-group mb-3 text-left">			
+			   <div class="form-group row">
+             	  
+					<label for="priceFrom" class="col-sm-4 col-form-label">Комнат</label>
+									 	
+						<div class="col-sm-8">				  
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room1" value="room1">
+							<label class="form-check-label" for="room1">1</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room2" value="room2">
+							<label class="form-check-label" for="room2">2</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room3" value="room3">
+							<label class="form-check-label" for="room3">3</label>
+						  </div>
+						  
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room4" value="room4">
+							<label class="form-check-label" for="room4">4</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room5" value="room5">
+							<label class="form-check-label" for="room5">5</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room6" value="room6">
+							<label class="form-check-label" for="room6">6</label>
+						  </div>
+
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="roomStudio" value="roomStudio">
+							<label class="form-check-label" for="roomStudio">Студия</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="roomFree" value="roomFree">
+							<label class="form-check-label" for="roomFree">Свободная планировка</label>
+						  </div>							  
+						</div>
+				</div>			   												
+			</div>
+			</div>
+
+			  <p>
+			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				Ещё фильтры
+			  </button>
+			  </p>
+				<div class="collapse text-left" id="collapseExample">
+					<div class="form-group row">
+             	    <label for="priceFrom" class="col-sm-4 col-form-label">Цена, руб</label>
+					 <div class="col-sm-8 input-group-prepend">			
+						<input type="number" class="form-control" id="priceFrom" placeholder="от">
+						<input type="number" class="form-control" id="priceTo" placeholder="до">
+					</div>
+               </div>
+                <div class="form-group row">
+             	    <label for="priceFrom" class="col-sm-4 col-form-label">Площадь, м<sup>2</sup></label>
+					 <div class="col-sm-8 input-group-prepend">			
+						<input type="number" class="form-control" id="squareFrom" placeholder="от">
+						<input type="number" class="form-control" id="squareTo" placeholder="до">
+					</div>
+               </div>		
+			     <div class="form-group row">
+             	    <label for="priceFrom" class="col-sm-4 col-form-label">Этаж</label>
+					 <div class="col-sm-8 input-group-prepend">			
+						<input type="number" class="form-control" id="floorFrom" placeholder="от">
+						<input type="number" class="form-control" id="floorTo" placeholder="до">
+					</div>
+               </div>				
+				
+			   <div class="form-group row">            	  
+						<div class="col-sm-4"></div>			 	
+						<div class="col-sm-8">				  
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room1" value="room1">
+							<label class="form-check-label" for="room1">Не первый</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room2" value="room2">
+							<label class="form-check-label" for="room2">Не последний</label>
+						  </div>
+						  <div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="room3" value="room3">
+							<label class="form-check-label" for="room3">Только последний</label>
+						  </div>
+						  							  
+						</div>
+						
+				</div>
+				<div class="form-group row">
+             	    <label for="priceFrom" class="col-sm-4 col-form-label">Вид объекта</label>
+					<div class="col-sm-8 btn-group btn-group-toggle" data-toggle="buttons">
+					  <label class="btn btn-primary active">
+						<input type="radio" name="options" id="option1" autocomplete="off" checked> Все
+					  </label>
+					  <label class="btn btn-primary">
+						<input type="radio" name="options" id="option2" autocomplete="off"> Вторичка
+					  </label>
+					  <label class="btn btn-primary">
+						<input type="radio" name="options" id="option3" autocomplete="off"> Новостройка
+					  </label>
+					</div>
+               </div>						
+				</div>
+				<div class="intro-button mx-auto">
+				  <br>
+				  <a class="btn btn-primary btn-xl" href="#">НАЙТИ!</a>
+				</div>
+								
+			</div>
+
+		
+          </form>
+          <!-- <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="#">НАЙТИ!</a>
+          </div> -->
+		  	  
+        </div>
+		
+      </div>
+
+	
+
+  </section>
+
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; realestatenotifier.com 2020</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+
+  </script>
+  
+</body>
+
+</html>
